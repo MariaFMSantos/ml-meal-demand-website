@@ -193,17 +193,21 @@ st.markdown(
 )
 
 # Colunas para imagens lado a lado
+# Colunas para imagens lado a lado
 col1, col2, col3, col4 = st.columns(4)
+
+# URL base para facilitar a manutenção
+base_url = "https://raw.githubusercontent.com/MariaFMSantos/ml-meal-demand-website/main/"
 
 with col1:
     st.markdown(
-        "<img src='https://raw.githubusercontent.com/MaryFernand/MachineLearning2/bb0369bb62ec5edd4a093d9ad19214093ae91e39/ufrja.png' "
+        f"<img src='{base_url}ufrja.png' "
         "style='width:150px; margin-top:-10px;'>",
         unsafe_allow_html=True
     )
 with col2:
-    st.image("https://raw.githubusercontent.com/MaryFernand/MachineLearning2/bb0369bb62ec5edd4a093d9ad19214093ae91e39/ufrj_macae.png", width=150)
+    st.image(f"{base_url}ufrj_macae.png", width=150)
 with col3:
-    st.image("https://raw.githubusercontent.com/MaryFernand/MachineLearning2/bb0369bb62ec5edd4a093d9ad19214093ae91e39/instituto_politecnico.png", width=150)
+    st.image(f"{base_url}instituto_politecnico.png", width=150)
 with col4:
-    st.image("https://raw.githubusercontent.com/MaryFernand/MachineLearning2/bb0369bb62ec5edd4a093d9ad19214093ae91e39/cnpq.png", width=150)
+    st.image(f"{base_url}cnpq.png", width=150)
